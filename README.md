@@ -132,7 +132,7 @@ The salt needs to be unique per-user per-password. Every time a user creates an 
 The **MD5** message-digest algorithm is a widely used cryptographic hash function producing a **128-bit** (16-byte) hash value, typically expressed in text format as a 32-digit hexadecimal number. MD5 has been utilized in a wide variety of cryptographic applications and is also commonly used to verify data integrity.
 
 ```MD5("The quick brown fox jumps over the lazy dog") =```<br>
-```9e107d9d372bb6826bd81d3542a419d6```
+```9e107d9d372bb6826bd81d3542a419d6```<br>
 
 In cryptography, **SHA-1** (Secure Hash Algorithm 1) is a cryptographic hash function designed by the United States National Security Agency and is a U.S. Federal Information Processing Standard published by the United States NIST.[2] SHA-1 produces a **160-bit** (20-byte) hash value known as a message digest. A SHA-1 hash value is typically rendered as a hexadecimal number, 40 digits long.<br>
 
