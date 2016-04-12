@@ -135,12 +135,9 @@ The **MD5** message-digest algorithm is a widely used cryptographic hash functio
 ```9e107d9d372bb6826bd81d3542a419d6```
 
 In cryptography, **SHA-1** (Secure Hash Algorithm 1) is a cryptographic hash function designed by the United States National Security Agency and is a U.S. Federal Information Processing Standard published by the United States NIST.[2] SHA-1 produces a **160-bit** (20-byte) hash value known as a message digest. A SHA-1 hash value is typically rendered as a hexadecimal number, 40 digits long.<br>
-```SHA1("The quick brown fox jumps over the lazy dog")```
-
-```gives hexadecimal: 2fd4e1c67a2d28fced849ee1bb76e7391b93eb12```
-
-```gives Base64 binary to ASCII text encoding: L9ThxnotKPzthJ7hu3bnORuT6xI=```
-
+**SHA1("The quick brown fox jumps over the lazy dog")<br>
+gives hexadecimal: 2fd4e1c67a2d28fced849ee1bb76e7391b93eb12<br>
+gives Base64 binary to ASCII text encoding: L9ThxnotKPzthJ7hu3bnORuT6xI=<br>**
 
 ####bcrypt
 
