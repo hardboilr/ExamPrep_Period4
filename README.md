@@ -144,6 +144,7 @@ gives Base64 binary to ASCII text encoding: L9ThxnotKPzthJ7hu3bnORuT6xI=1<br>**
 bcrypt is a key derivation function for passwords, based on the Blowfish cipher. Besides incorporating a salt to protect against rainbow table attacks, bcrypt is an adaptive function: over time, the iteration count can be increased to make it slower, so it remains resistant to brute-force search attacks even with increasing computation power. <br>
 Ex. Implementation here: [Github - NodeServerSeed](https://github.com/hardboilr/NodeServerSeed/blob/master/models/user.js). Passwords are hashed and salted before being saved to db.
 
+*sources* <br>
 [Wikipedia - MD5]()<br>
 [Wikipedia - SHA-1](https://en.wikipedia.org/wiki/SHA-1) <br>
 [yorickpeterse.com - bcrypt](http://yorickpeterse.com/articles/use-bcrypt-fool/) <br>
@@ -156,6 +157,7 @@ In authentication, when the user successfully logs in using his credentials, a J
 Whenever the user wants to access a protected route or resource, the user agent should send the JWT, typically in the Authorization header using the Bearer schema. The content of the header could look like the following: `Authorization: <token>`<br>
 This is a stateless authentication mechanism as the user state is never saved in server memory. The server's protected routes will check for a valid JWT in the Authorization header, and if it's present, the user will be allowed to access protected resources. This allows you to fully rely on data APIs that are **stateless** and even make requests to downstream services.
 
+*sources*<br>
 [JSON Web Tokens](https://jwt.io/introduction/)
 
 ###7. Explain and demonstrate a system using jwt's, focusing on both client and server side. 
