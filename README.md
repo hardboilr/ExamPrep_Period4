@@ -129,7 +129,8 @@ Randomize the hashes by appending or prepending a random string, called a salt, 
 The salt needs to be unique per-user per-password. Every time a user creates an account or changes their password, the password should be hashed using a new random salt. Never reuse a salt. The salt also needs to be long, so that there are many possible salts. As a rule of thumb, make your salt is at least as long as the hash function's output. The salt should be stored in the user account table alongside the hash.
 
 ####sha1, md5 (message-digest algorithms)
-The **MD5** message-digest algorithm is a widely used cryptographic hash function producing a **128-bit** (16-byte) hash value, typically expressed in text format as a 32-digit hexadecimal number. MD5 has been utilized in a wide variety of cryptographic applications and is also commonly used to verify data integrity.<br>
+The **MD5** message-digest algorithm is a widely used cryptographic hash function producing a **128-bit** (16-byte) hash value, typically expressed in text format as a 32-digit hexadecimal number. MD5 has been utilized in a wide variety of cryptographic applications and is also commonly used to verify data integrity.
+
 ```MD5("The quick brown fox jumps over the lazy dog") =```<br>
 ```9e107d9d372bb6826bd81d3542a419d6```
 
@@ -139,6 +140,7 @@ In cryptography, **SHA-1** (Secure Hash Algorithm 1) is a cryptographic hash fun
 ```gives Base64 binary to ASCII text encoding: L9ThxnotKPzthJ7hu3bnORuT6xI=```
 
 ####bcrypt
+
 bcrypt is a key derivation function for passwords, based on the Blowfish cipher. Besides incorporating a salt to protect against rainbow table attacks, bcrypt is an adaptive function: over time, the iteration count can be increased to make it slower, so it remains resistant to brute-force search attacks even with increasing computation power. <br>
 Ex. Implementation here: [Github - NodeServerSeed](https://github.com/hardboilr/NodeServerSeed/blob/master/models/user.js). Passwords are hashed and salted before being saved to db.
 
